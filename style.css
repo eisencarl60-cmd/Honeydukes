@@ -1,1 +1,8 @@
-
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Georgia, serif;
+    text-align: center;
+    background: #fff7fb;
+    color: #7a4560;
+}
