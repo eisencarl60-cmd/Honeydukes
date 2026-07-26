@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Honeydukes Laboratory</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:
+        radial-gradient(circle at 50% 0%, rgba(70,100,180,.20), transparent 35%),
+        linear-gradient(180deg, #171719 0%, #0c0c0f 55%, #080706 100%);
+    color: #eee7d5;
+    font-family: Georgia, "Times New Roman", serif;
+    padding: 10px;
+}
+
+.castle {
+    max-width: 420px;
+    margin: auto;
+}
+
+.header {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 18px 10px;
+    border: 1px solid rgba(230,190,80,.55);
+    border-radius: 14px;
+    background:
+        radial-gradient(circle at 50% 10%, rgba(120,160,255,.16), transparent 55%),
+        linear-gradient(180deg, #201d19, #100e0c);
+    box-shadow:
+        0 0 14px rgba(120,160,255,.18),
+        inset 0 0 22px rgba(255,210,100,.05);
+}
+
+.header::before,
+.header::after {
+    content: "✦";
+    position: absolute;
+    top: 8px;
+    color: #e7c46b;
+    text-shadow: 0 0 8px #ffd86b;
+}
+
+.header::before {
+    left: 12px;
+}
+
+.header::after {
+    right: 12px;
+}
+
+.castle-icon {
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+
+.title {
+    color: #87CEEB;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.subtitle {
+    margin-top: 6px;
+    font-size: 11px;
+    letter-spacing: 1.4px;
+    color: #b9cfff;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="castle">
+
+    <div class="header">
+
+        <div class="castle-icon">🏰</div>
+
+        <div class="title">
+            ℌ𝔬𝔤𝔴𝔞𝔯𝔱𝔰 ℌ𝔦𝔤𝔥 𝔖𝔠𝔥𝔬𝔬𝔩
+        </div>
+
+        <div class="subtitle">
+            Honeydukes Laboratory
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
