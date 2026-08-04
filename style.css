@@ -1,1 +1,74 @@
+/* ===========================
+   HEADER
+=========================== */
 
+.header {
+    position: relative;
+    overflow: clip;
+    text-align: center;
+
+    padding: 18px 10px;
+
+    border: 1px solid rgba(230,190,80,.55);
+    border-radius: 14px;
+
+    background:
+        radial-gradient(circle at 50% 10%,
+        rgba(120,160,255,.16),
+        transparent 55%),
+        linear-gradient(180deg,
+        #201d19,
+        #100e0c);
+
+    box-shadow:
+        0 0 14px rgba(120,160,255,.18),
+        inset 0 0 22px rgba(255,210,100,.05);
+}
+
+.header::before,
+.header::after {
+    content: "✦";
+    position: absolute;
+    top: 8px;
+    color: #e7c46b;
+    text-shadow: 0 0 8px #ffd86b;
+}
+
+.header::before {
+    left: 12px;
+}
+
+.header::after {
+    right: 12px;
+}
+
+.castle-icon {
+    font-size: 34px;
+    margin-bottom: 6px;
+    filter: drop-shadow(0 0 8px rgba(180,200,255,.5));
+}
+
+.title {
+    margin: 0;
+
+    color: #87CEEB;
+
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.1;
+
+    text-shadow:
+        0 0 5px rgba(255,215,120,.6),
+        0 0 12px rgba(120,160,255,.3);
+}
+
+.subtitle {
+    margin-top: 8px;
+
+    font-size: 11px;
+    letter-spacing: 1.4px;
+
+    color: #b9cfff;
+
+    min-height: 14px;
+}
