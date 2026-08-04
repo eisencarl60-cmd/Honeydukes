@@ -218,3 +218,35 @@ body {
     transform: scale(.5);
   }
 }
+/* CURRENT TERM */
+
+.current-term {
+  text-align: center;
+  padding: 14px 10px 16px;
+  color: #eee7d5;
+}
+
+.term-motto {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.term-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.term-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #d86bd8;
+  margin-bottom: 20px;
+}
+
+.term-description {
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.45;
+}
