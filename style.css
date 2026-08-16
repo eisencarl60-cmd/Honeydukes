@@ -361,7 +361,8 @@ body {
     0 0 10px rgba(0,0,0,.35);
 }
 .gilded-top-line {
-  width: 100%;
+  width: calc(100% + 4px);
+  margin-left: -2px;
   height: 3px;
   background: linear-gradient(
     90deg,
