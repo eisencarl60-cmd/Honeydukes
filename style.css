@@ -256,7 +256,7 @@ body {
 /* SYSTEM STATUS */
 
 .status {
-  margin-top: 10px;
+  margin-top: 0;
   padding: 10px;
   text-align: center;
   border-radius: 9px;
