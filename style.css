@@ -19,7 +19,6 @@ body {
 }
 
 .castle {
-  position: relative;
   width: 100%;
   max-width: 420px;
   margin: auto;
@@ -362,12 +361,8 @@ body {
     0 0 10px rgba(0,0,0,.35);
 }
 .gilded-top-line {
-  position: absolute;
-  top: 0;
-  left: -2px;
-  width: calc(100% + 4px);
+  width: 100%;
   height: 3px;
-  z-index: 10;
   background: linear-gradient(
     90deg,
     #f5d98b,
@@ -375,3 +370,4 @@ body {
     #f5d98b
   );
 }
+  
