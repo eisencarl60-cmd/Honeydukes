@@ -297,3 +297,53 @@ body {
   color: #b9cfff;
   padding: 10px;
 }
+/* SORTING HAT STUDENT CARDS */
+
+.sorting-student-card {
+  display: block;
+  padding: 10px;
+  margin-top: 7px;
+  border-radius: 9px;
+  border: 1px solid rgba(255,215,120,.25);
+  background: rgba(10,8,5,.38);
+  text-decoration: none;
+  transition: .2s;
+}
+
+.sorting-student-card:hover {
+  border-color: rgba(255,215,120,.65);
+  box-shadow: 0 0 8px rgba(255,210,100,.18);
+  transform: translateY(-1px);
+}
+
+.sorting-student-name {
+  color: #70e6a3;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.sorting-student-status {
+  text-align: center;
+  color: #efd17c;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.sorting-hat-empty {
+  text-align: center;
+  color: #efd17c;
+  font-size: 11px;
+  padding: 10px;
+}
+
+.sorting-hat-error {
+  text-align: center;
+  color: #ffcf70;
+  font-size: 11px;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+.sorting-hat-error-detail {
+  color: #ff8f8f;
+}
