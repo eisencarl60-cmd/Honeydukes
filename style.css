@@ -361,7 +361,10 @@ body {
     0 0 10px rgba(0,0,0,.35);
 }
 .gilded-top-line {
+  position: relative;
+  z-index: 2;
   height: 3px;
+  margin: 0 -2px;
   background: linear-gradient(
     90deg,
     #f5d98b,
