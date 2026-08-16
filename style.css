@@ -22,6 +22,13 @@ body {
   width: 100%;
   max-width: 420px;
   margin: auto;
+  background: linear-gradient(180deg, #1f1a12, #0c0906);
+  border: 2px solid #6b5a2a;
+  border-radius: 10px;
+  box-shadow:
+    0 0 14px rgba(255,215,120,0.25),
+    inset 0 0 22px rgba(0,0,0,0.7);
+  overflow: hidden;
 }
 
 /* HEADER */
