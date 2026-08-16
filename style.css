@@ -359,3 +359,12 @@ body {
     inset 0 0 18px rgba(255,200,120,.05),
     0 0 10px rgba(0,0,0,.35);
 }
+.gilded-top-line {
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    #f5d98b,
+    #6b5a2a,
+    #f5d98b
+  );
+}
