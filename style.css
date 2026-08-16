@@ -281,3 +281,19 @@ body {
   color: #8ff0b5;
   font-weight: bold;
 }
+/* SORTING HAT */
+
+.sorting-hat-intro {
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #d8d0c2;
+  margin-bottom: 12px;
+}
+
+.sorting-hat-loading {
+  text-align: center;
+  font-size: 11px;
+  color: #b9cfff;
+  padding: 10px;
+}
