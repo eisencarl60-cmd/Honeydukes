@@ -239,34 +239,35 @@ body {
 
 .current-term {
   text-align: center;
-  padding: 14px 10px 16px;
+  padding: 12px 10px 14px;
   color: #eee7d5;
 }
 
 .term-motto {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .term-label {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 
 .term-title {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   color: #d86bd8;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .term-description {
-  font-size: 15px;
+  font-size: 14px;
   font-style: italic;
   line-height: 1.45;
 }
+
 .emoji {
   font-style: normal;
 }
