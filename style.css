@@ -436,3 +436,7 @@ body {
 .first-year-label {
   color: #70e6a3;
 }  
+.journey-marker {
+  display: inline-block;
+  width: 48px;
+}
