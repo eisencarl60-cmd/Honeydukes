@@ -457,3 +457,13 @@ body {
   text-shadow: 0 0 7px rgba(85,207,255,.45);
   margin-bottom: 10px;
 }
+.castle-map-divider {
+  height: 1px;
+  margin: 0 8px 12px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(85,207,255,.55),
+    transparent
+  );
+}
