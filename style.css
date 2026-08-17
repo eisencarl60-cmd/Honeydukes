@@ -449,3 +449,11 @@ body {
   border-radius: 10px;
   background: rgba(16,13,10,.88);
 }
+.castle-map-title {
+  text-align: center;
+  color: #55cfff;
+  font-size: 17px;
+  font-weight: bold;
+  text-shadow: 0 0 7px rgba(85,207,255,.45);
+  margin-bottom: 10px;
+}
