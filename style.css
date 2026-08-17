@@ -481,7 +481,7 @@ body {
 }
 
 .castle-map-link:hover {
-  transform: translateY(-3px) scale(1.07);
+  transform: translateY(-3px) scale(1.07) rotate(1deg);
   border-color: rgba(255,220,120,.95);
   box-shadow:
     0 0 10px rgba(230,190,80,.65),
