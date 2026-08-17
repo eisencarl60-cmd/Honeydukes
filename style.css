@@ -467,3 +467,6 @@ body {
     transparent
   );
 }
+.castle-map-link {
+  color: #f0d27c;
+}
