@@ -32,14 +32,13 @@ body {
   overflow: hidden;
 }
 
-.castle::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  height: 3px;
+.gilded-top-line {
+  position: relative;
   z-index: 10;
+  width: calc(100% + 4px);
+  height: 3px;
+  margin-left: -2px;
+  margin-top: -2px;
   background: linear-gradient(
     90deg,
     #f5d98b,
