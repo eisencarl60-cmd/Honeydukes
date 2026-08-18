@@ -519,3 +519,7 @@ body {
 .house-standing {
   color: inherit;
 }
+.house-standing.gryffindor {
+  color: #ffd84d;
+  text-decoration: none;
+}
