@@ -516,3 +516,6 @@ body {
     transparent
   );
 }
+.house-standing {
+  color: inherit;
+}
