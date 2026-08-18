@@ -517,9 +517,32 @@ body {
   );
 }
 .house-standing {
-  color: inherit;
+  position: relative;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 10px;
+  margin-top: 7px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(10,8,5,.38);
+  font-size: 13px;
+  transition: .3s;
 }
-.house-standing.gryffindor {
-  color: #ffd84d;
-  text-decoration: none;
+
+.house-standing:hover {
+  border-color: rgba(170,200,255,.7);
+  box-shadow:
+    0 0 8px rgba(100,150,255,.35),
+    inset 0 0 8px rgba(100,150,255,.12);
+  transform: translateY(-1px);
+}
+
+.house-standing.leader {
+  border-color: rgba(255,215,120,.55);
+  box-shadow:
+    0 0 9px rgba(255,215,120,.20),
+    inset 0 0 10px rgba(255,215,120,.06);
 }
