@@ -547,6 +547,13 @@ body {
     0 0 22px rgba(255,215,77,.45),
     0 0 36px rgba(255,215,77,.25);
 }
+.house-standing.ravenclaw:hover {
+  border-color: rgba(41,149,219,.95);
+  box-shadow:
+    0 0 10px rgba(41,149,219,.65),
+    0 0 22px rgba(41,149,219,.45),
+    0 0 36px rgba(41,149,219,.25);
+}
 .house-standing.leader {
   border-color: rgba(255,215,120,.55);
   box-shadow:
