@@ -546,3 +546,12 @@ body {
     0 0 9px rgba(255,215,120,.20),
     inset 0 0 10px rgba(255,215,120,.06);
 }
+.house-standing.gryffindor {
+  color: #ffd84d;
+  text-decoration: none;
+}
+
+.house-standing.ravenclaw {
+  color: #55cfff;
+  text-decoration: none;
+}
