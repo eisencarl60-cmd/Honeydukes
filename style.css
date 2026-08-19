@@ -561,6 +561,13 @@ body {
     0 0 22px rgba(85,217,139,.45),
     0 0 36px rgba(85,217,139,.25);
 }
+.house-standing.hufflepuff:hover {
+  border-color: rgba(199,125,255,.95);
+  box-shadow:
+    0 0 10px rgba(199,125,255,.65),
+    0 0 22px rgba(199,125,255,.45),
+    0 0 36px rgba(199,125,255,.25);
+}
 .house-standing.leader {
   border-color: rgba(255,215,120,.55);
   box-shadow:
