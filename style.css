@@ -989,3 +989,19 @@ body {
   border-radius: 10px;
   background: rgba(16,13,10,.88);
 }
+/* NOTICE */
+
+.notice {
+  font-size: 12px;
+  line-height: 1.55;
+  color: #e8e3d8;
+  text-align: center;
+}
+
+.notice-highlight {
+  color: #b9d7ff;
+}
+.humblebee-name {
+  color: #f0d27c;
+  font-weight: bold;
+}
