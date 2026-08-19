@@ -554,6 +554,13 @@ body {
     0 0 22px rgba(41,149,219,.45),
     0 0 36px rgba(41,149,219,.25);
 }
+.house-standing.slytherin:hover {
+  border-color: rgba(85,217,139,.95);
+  box-shadow:
+    0 0 10px rgba(85,217,139,.65),
+    0 0 22px rgba(85,217,139,.45),
+    0 0 36px rgba(85,217,139,.25);
+}
 .house-standing.leader {
   border-color: rgba(255,215,120,.55);
   box-shadow:
