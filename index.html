@@ -592,3 +592,134 @@ setInterval(() => {
 
 }, 20000);
 </script>
+    <!-- SPECIAL AWARDS TRINITY -->
+
+<div class="panel" id="awards-panel">
+
+  <a href="https://www.chess.com/clubs/forum/view/test-407838-4"
+     target="_blank"
+     style="text-decoration:none; color:inherit;">
+
+    <div class="panel-title">
+      🏅 𝓢𝓹𝓮𝓬𝓲𝓪𝓵 𝓐𝔀𝓪𝓻𝓭𝓼
+    </div>
+
+  </a>
+
+  <div class="divider"></div>
+
+  <div class="awards-subtitle">
+    ✨ HOGWARTS AWARDS TRINITY ✨
+  </div>
+
+  <div id="awards-trinity">
+
+    <div id="award-second"></div>
+
+    <div id="award-first"></div>
+
+    <div id="award-third"></div>
+
+  </div>
+
+</div>
+  <script>
+
+/*
+========================================
+🏅 SPECIAL AWARDS CONTROL ROOM
+EDIT STUDENTS AND AWARD TOTALS HERE
+========================================
+*/
+
+const specialAwards = [
+  {
+    name: "benson1952",
+    awards: 19,
+    profile: "https://www.chess.com/member/benson1952"
+  },
+  {
+    name: "Minerva_Umbridge",
+    awards: 15,
+    profile: "https://www.chess.com/member/minerva_umbridge"
+  },
+  {
+    name: "x_Bentley_x",
+    awards: 14,
+    profile: "https://www.chess.com/member/x_bentley_x"
+  }
+];
+
+/*
+========================================
+✨ AWARDS TRINITY MAGICAL MACHINERY
+NO HEADMASTERIAL TINKERING REQUIRED
+========================================
+*/
+async function getChessAvatar(username) {
+    try {
+        const response = await fetch(
+            'https://api.chess.com/pub/player/' + username.toLowerCase()
+        );
+
+        if (!response.ok) return null;
+
+        const player = await response.json();
+        return player.avatar || null;
+
+    } catch (error) {
+        console.error('Could not load avatar for ' + username, error);
+        return null;
+    }
+}
+specialAwards.sort((a, b) => b.awards - a.awards);
+
+const podium = [
+  {
+    position: "award-first",
+    student: specialAwards[0],
+    medal: "🥇"
+  },
+  {
+    position: "award-second",
+    student: specialAwards[1],
+    medal: "🥈"
+  },
+  {
+    position: "award-third",
+    student: specialAwards[2],
+    medal: "🥉"
+  }
+];
+
+podium.forEach(async entry => {
+
+  const container =
+    document.getElementById(entry.position);
+const avatar = await getChessAvatar(entry.student.name);
+  container.innerHTML =
+    '<a class="award-card ' +
+    entry.position +
+    '" href="' +
+    entry.student.profile +
+    '" target="_blank">' +
+
+    '<span class="award-medal">' +
+    entry.medal +
+    '</span>' +
+'<img class="award-avatar" src="' +
+(avatar || 'https://www.chess.com/bundles/web/images/user-image.007dad08.svg') +
+'" alt="' + entry.student.name + '">' +
+    '<span class="award-name">@' +
+    entry.student.name +
+    '</span>' +
+
+    '<span class="award-count">' +
+    entry.student.awards +
+    ' 🏅</span>' +
+
+    '</a>';
+
+});
+
+</script>
