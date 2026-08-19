@@ -400,3 +400,195 @@ setInterval(
 </a>
   </div>
 </div>
+<!-- QUIDDITCH COUNTDOWN -->
+
+<div class="panel" id="quidditch-panel">
+  <div id="quidditch-countdown-view">
+
+  <div class="panel-title">
+    🧹 Next Quidditch Match 🏟️
+  </div>
+
+  <div class="divider"></div>
+
+  <div id="match-name" style="
+    text-align:center;
+    color:#c9dcff;
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:12px;
+    text-shadow:0 0 7px rgba(120,160,255,.45);
+  ">
+    _Demons vs Hogwarts High School
+  </div>
+
+  <div id="countdown" style="
+    text-align:center;
+    font-family:Arial,sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    color:#efd17c;
+    letter-spacing:1px;
+    margin:10px 0;
+    text-shadow:0 0 8px rgba(255,215,120,.35);
+  ">
+    COUNTDOWN INITIALISING...
+  </div>
+
+  <div style="
+    text-align:center;
+    font-size:9px;
+    color:#9fb8e8;
+    letter-spacing:1px;
+    margin-bottom:12px;
+  ">
+    UNTIL THE BROOMS TAKE FLIGHT
+  </div>
+
+ <a id="match-link"
+   href="https://www.chess.com/clubs/upcomingevents/hogwarts-high-school"
+   target="_blank"
+   class="magic-button"
+   style="max-width:230px; margin:auto;">
+     🏟️ ENTER THE QUIDDITCH STADIUM
+  </a>
+</div>
+
+<div id="quidditch-magic-view" style="display:none;">
+  <div class="quidditch-sky">
+
+    <div class="flying-broom">🧹</div>
+    <div class="golden-snitch">✨</div>
+<div class="mystery-cup">🏆❓</div>
+    <div class="quidditch-magic-title">
+      🏟️ THE BROOMS ARE RISING 🧹
+    </div>
+
+    <div class="quidditch-magic-subtitle">
+      MAGIC IS IN THE AIR
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+<script>
+
+/*
+========================================
+🧹 QUIDDITCH CONTROL ROOM
+EDIT THESE THREE LINES FOR EACH MATCH
+========================================
+*/
+
+const matchName =
+  "_Demons vs Hogwarts High School";
+
+const matchDate =
+  "2026-08-01T20:00:00+02:00";
+
+const matchLink =
+  "https://www.chess.com/clubs/upcomingevents/hogwarts-high-school";
+
+
+/*
+========================================
+⚙️ MAGICAL MACHINERY
+NO HEADMASTERIAL TINKERING REQUIRED
+========================================
+*/
+
+document.getElementById("match-name").textContent =
+  matchName;
+
+document.getElementById("match-link").href =
+  matchLink;
+
+
+function updateCountdown() {
+
+  const now =
+    new Date().getTime();
+
+  const destination =
+    new Date(matchDate).getTime();
+
+  const distance =
+    destination - now;
+
+
+  if (distance <= 0) {
+
+    document.getElementById("countdown").innerHTML =
+      "🏟️ THE MATCH IS ABOUT TO BEGIN! 🧹";
+
+    return;
+  }
+
+
+  const days =
+    Math.floor(distance / (1000 * 60 * 60 * 24));
+
+  const hours =
+    Math.floor(
+      (distance % (1000 * 60 * 60 * 24))
+      / (1000 * 60 * 60)
+    );
+
+  const minutes =
+    Math.floor(
+      (distance % (1000 * 60 * 60))
+      / (1000 * 60)
+    );
+
+  const seconds =
+    Math.floor(
+      (distance % (1000 * 60))
+      / 1000
+    );
+
+
+  document.getElementById("countdown").innerHTML =
+    days + "D · " +
+    hours + "H · " +
+    minutes + "M · " +
+    seconds + "S";
+
+}
+
+
+updateCountdown();
+
+setInterval(
+  updateCountdown,
+  1000
+);
+/* =========================
+   QUIDDITCH MAGIC CYCLE
+========================= */
+
+const countdownView = document.getElementById("quidditch-countdown-view");
+const magicView = document.getElementById("quidditch-magic-view");
+
+function showCountdownView() {
+  countdownView.style.display = "block";
+  magicView.style.display = "none";
+}
+
+function showMagicView() {
+  countdownView.style.display = "none";
+  magicView.style.display = "block";
+}
+
+showCountdownView();
+
+setInterval(() => {
+  showMagicView();
+
+  setTimeout(() => {
+    showCountdownView();
+  }, 8000);
+
+}, 20000);
+</script>
