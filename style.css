@@ -1021,3 +1021,13 @@ body {
   color: #8e41d5;
   margin-bottom: 8px;
 }
+/* NOTICE LINKS */
+
+.notice a,
+.notice a:visited {
+  color: #d7c4ff;
+}
+
+.notice a:hover {
+  color: #f0d27c;
+}
