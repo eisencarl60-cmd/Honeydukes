@@ -1053,3 +1053,8 @@ body {
   color: #ffd84d;
   font-weight: bold;
 }
+/* FOOTER CHEESE */
+
+.footer .cheese {
+  margin-top: 8px;
+}
