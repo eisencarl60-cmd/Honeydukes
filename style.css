@@ -1034,10 +1034,22 @@ body {
 /* FOOTER */
 
 .footer {
-  margin-top: 18px;
-  padding: 14px 8px;
+  margin-top: 6px;
+  padding: 6px 8px;
   text-align: center;
   font-size: 10px;
   line-height: 1.5;
   color: #cbdcff;
+}
+
+/* FOOTER COLOURS */
+
+.footer-purple {
+  color: #8e41d5;
+  font-weight: bold;
+}
+
+.footer-gold {
+  color: #ffd84d;
+  font-weight: bold;
 }
