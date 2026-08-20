@@ -961,34 +961,7 @@ body {
     drop-shadow(0 0 6px rgba(120,160,255,0.35))
     brightness(1.05);
 }
-/* MAINTENANCE */
 
-.system-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 6px 2px;
-  font-size: 11px;
-  border-bottom: 1px solid rgba(255,255,255,.05);
-}
-
-.system-row:last-child {
-  border-bottom: none;
-}
-
-.system-ok {
-  color: #86e5aa;
-}
-
-.system-magic {
-  color: #c3b1ff;
-}
-.winzengamot-panel {
-  margin: 6px 4px 16px;
-  padding: 14px;
-  border: 1px solid rgba(230,190,80,.45);
-  border-radius: 10px;
-  background: rgba(16,13,10,.88);
-}
 /* NOTICE */
 
 .notice {
