@@ -1015,3 +1015,9 @@ body {
   border-radius: 10px;
   background: rgba(16,13,10,.88);
 }
+/* SPECIAL ANNOUNCEMENTS TITLE */
+
+.special-announcements-panel .panel-title {
+  color: #d7c4ff;
+  margin-bottom: 8px;
+}
